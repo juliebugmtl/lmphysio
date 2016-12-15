@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Laurence Mignault Physiothérapie - L'approche de traitement</title>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<nav>
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+		<a href="../index.html" class="hvr-bounce-to-right">À propos</a>
+		<a href="physiotherapie.html" class="hvr-bounce-to-right">La physiothérapie</a>
+		<a href="approche.html" class="current">L'approche</a>
+		<a href="premierevisite.html" class="hvr-bounce-to-right">La première visite</a>
+		<a href="examenannuel.html" class="hvr-bounce-to-right">Examen annuel</a>
+		<a href="contact.html" class="hvr-bounce-to-right">Contact</a>
+	</nav>
+
+	<div id="mobilenav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  		<!-- Overlay content -->
+  		<div class="overlay-content">
+			<a href="../index.html">À propos</a>
+			<a href="physiotherapie.html">La physiothérapie</a>
+			<a href="approche.html" class="mobilecurrent">L'approche</a>
+			<a href="premierevisite.html">La première visite</a>
+			<a href="examenannuel.html">Examen annuel</a>
+			<a href="contact.html">Contact</a>
+  		</div>
+
+	</div>
+
+		<span class="mobilemenu" onclick="openNav()">☰</span>
+
+	</div>
+
+	<div class="mobilelogo">
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+	</div>
+
+	<main>
+
+		<h1>L'approche de traitement</h1>
+
+		<p>Techniques utilisées pour atteindre les objectifs de traitement:</p>
+
+		<ul>
+		<li> La thérapie manuelle orthopédique : mobilisations utilisées afin de diminuer la douleur, augmenter l’amplitude de mouvement, faciliter le mouvement et réduire l’inflammation des tissus et des articulations touchés.
+		<li> Le relâchement neuromusculaire et myofascial
+		<li> L’analyse et la rééducation posturale
+		<li> La rééducation par l’exercice
+		<li> Le contrôle moteur
+		<li> La proprioception
+		<li> L’électrothérapie (TENS, courant interférentiel, etc.)
+		<li> La thermothérapie (chaleur, froid)
+		<li> Le taping (McConnel, Neuro-proprioceptif)
+		<li> La correction et l’enseignement: conseils et exercices pour améliorer l’hygiène posturale (assise, debout, dans les sports), les habitudes de vie, etc.
+		</ul>
+
+
+	</main>
+
+<script>
+function openNav() {
+    document.getElementById("mobilenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mobilenav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>

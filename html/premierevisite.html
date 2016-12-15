@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Laurence Mignault Physiothérapie - La physiothérapie</title>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<nav>
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+		<a href="../index.html" class="hvr-bounce-to-right">À propos</a>
+		<a href="physiotherapie.html" class="hvr-bounce-to-right">La physiothérapie</a>
+		<a href="approche.html" class="hvr-bounce-to-right">L'approche</a>
+		<a href="premierevisite.html" class="current">La première visite</a>
+		<a href="examenannuel.html" class="hvr-bounce-to-right">Examen annuel</a>
+		<a href="contact.html" class="hvr-bounce-to-right">Contact</a>
+	</nav>
+
+	<div id="mobilenav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  		<!-- Overlay content -->
+  		<div class="overlay-content">
+			<a href="../index.html">À propos</a>
+			<a href="physiotherapie.html">La physiothérapie</a>
+			<a href="approche.html">L'approche</a>
+			<a href="premierevisite.html" class="mobilecurrent">La première visite</a>
+			<a href="examenannuel.html">Examen annuel</a>
+			<a href="contact.html">Contact</a>
+  		</div>
+
+	</div>
+
+		<span class="mobilemenu" onclick="openNav()">☰</span>
+
+	</div>
+
+	<div class="mobilelogo">
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+	</div>
+
+	<main>
+
+		<h1>La première visite</h1>
+
+		<p>Voici quelques conseils afin de faciliter votre première séance en physiothérapie (l'évaluation):</p>
+
+		<ul>
+			<li> Il est recommandé de porter ou d'apporter des vêtements amples et confortables permettant d'accéder à la région à évaluer (ex: short pour un problème de genou, camisole/chandail à manches courtes pour un problème d'épaule).
+
+			<li> Bien qu'il ne soit pas obligatoire de voir un médecin avant de venir en physiothérapie, si vous en avez, apportez tous documents médicaux en lien avec votre problème (prescription du médecin, résultats de rayons X, de MRI, etc.).
+
+			<li> À votre arrivée, vous devrez remplir un formulaire sur vos habitudes de vie, vos antécédents médicaux (blessures et hospitalisations) et autres conditions médicales afin que la physiothérapeute ait une bonne idée de votre état de santé général. Essayez d’arriver 15 minutes à l'avance afin de compléter ces formulaires.
+
+			<li> La première séance sera principalement dédiée à l'évaluation du problème au moyen de questions et de tests afin de bien identifier la ou les causes du problème et de dresser une liste des limitations à travailler. Avec ces informations, la physiothérapeute sera en mesure d'établir un plan de traitement en lien avec vos objectifs et pourra commencer à vous traiter le jour même. Plusieurs séances peuvent être nécessaires selon l'irritabilité et la sévérité du problème.
+
+			<li> À la fin de la visite, un reçu vous sera remis afin que vous puissiez faire une réclamation à vos assurances privées.
+		</ul>
+
+	</main>
+
+<script>
+function openNav() {
+    document.getElementById("mobilenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mobilenav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Laurence Mignault Physiothérapie - La physiothérapie</title>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<nav>
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+		<a href="../index.html" class="hvr-bounce-to-right">À propos</a>
+		<a href="physiotherapie.html" class="hvr-bounce-to-right">La physiothérapie</a>
+		<a href="approche.html" class="hvr-bounce-to-right">L'approche</a>
+		<a href="premierevisite.html" class="hvr-bounce-to-right">La première visite</a>
+		<a href="examenannuel.html" class="current">Examen annuel</a>
+		<a href="contact.html" class="hvr-bounce-to-right">Contact</a>
+	</nav>
+
+	<div id="mobilenav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  		<!-- Overlay content -->
+  		<div class="overlay-content">
+			<a href="../index.html">À propos</a>
+			<a href="physiotherapie.html">La physiothérapie</a>
+			<a href="approche.html">L'approche</a>
+			<a href="premierevisite.html">La première visite</a>
+			<a href="examenannuel.html" class="mobilecurrent">Examen annuel</a>
+			<a href="contact.html">Contact</a>
+  		</div>
+
+	</div>
+
+		<span class="mobilemenu" onclick="openNav()">☰</span>
+
+	</div>
+
+	<div class="mobilelogo">
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+	</div>
+
+	<main>
+
+		<h1>Examen annuel</h1>
+
+		<p class="bold">L'examen annuel préventif en physiothérapie - un service corporatif</p>
+
+		<p>L'examen annuel préventif en physiothérapie est un service professionnel ambulatoire offert aux entreprises par Laurence Mignault Physiothérapie. Il s'agit d'un service avec de nombreux avantages pour l'employeur et l'employé.</p>
+
+	</main>
+
+<script>
+function openNav() {
+    document.getElementById("mobilenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mobilenav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>

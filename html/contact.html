@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Laurence Mignault Physiothérapie - Contact</title>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<nav>
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+		<a href="../index.html" class="hvr-bounce-to-right">À propos</a>
+		<a href="physiotherapie.html" class="hvr-bounce-to-right">La physiothérapie</a>
+		<a href="approche.html" class="hvr-bounce-to-right">L'approche</a>
+		<a href="premierevisite.html" class="hvr-bounce-to-right">La première visite</a>
+		<a href="examenannuel.html" class="hvr-bounce-to-right">Examen annuel</a>
+		<a href="contact.html" class="current">Contact</a>
+	</nav>
+
+	<div id="mobilenav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  		<!-- Overlay content -->
+  		<div class="overlay-content">
+			<a href="../index.html">À propos</a>
+			<a href="physiotherapie.html">La physiothérapie</a>
+			<a href="approche.html">L'approche</a>
+			<a href="premierevisite.html">La première visite</a>
+			<a href="examenannuel.html">Examen annuel</a>
+			<a href="contact.html" class="mobilecurrent">Contact</a>
+  		</div>
+
+	</div>
+
+		<span class="mobilemenu" onclick="openNav()">☰</span>
+
+	</div>
+
+	<div class="mobilelogo">
+		<figure><img src="../images/logo.jpg" alt="Laurence Mignault Physiotherapie"></figure>
+	</div>
+
+	<main>
+
+		<h1>Contact</h1>
+
+		<p>Si vous voulez nous contacter, s'il-vous-plaît, laissez-nous vos commentaires.</p>
+
+		<div id="formwrapper">
+			<form action="mailto:santoromanto@videotron.ca" method="post" enctype="text/plain" validate>
+				<label for="fname">Prénom</label>
+				<input type="text" id="fname" name="firstname" required placeholder="Jean">
+
+				<label for="lname">Nom</label>
+				<input type="text" id="lname" name="lastname" required placeholder="Martin">
+
+				<label for="mail">Courriel</label>
+				<input type="email" id="mail" name="email" required placeholder="jmartin@gmail.com">
+
+				<label for="tarea">Commentaires</label>
+				<textarea id="tarea" placeholder="Comment pouvons-nous vous aider?"></textarea>
+
+				<input type="submit" value="Soumettre">
+				<input type="reset" value="Effacer">
+
+			</form>
+		</div>
+
+	</main>
+
+<script>
+function openNav() {
+    document.getElementById("mobilenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mobilenav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>
