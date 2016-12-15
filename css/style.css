@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Anaheim|Assistant|Raleway');
+
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+/* Figures */
+
+figure {
+	margin-bottom: 4%;
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure#photo {
+	float: right;
+	padding: 0px 5px 15px 15px;
+	width: 200px;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+}
+
+figure#video {
+	float: left;
+	padding: 5px 25px 0px 5px;
+	width: 220px;
+	height: auto;
+	margin-bottom: 0px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+/* Navigation */
+
+.current {
+	text-decoration: underline;
+	background-color: #ccc;
+	color: #db0c2b;
+	border-left: 5px solid #db0c2b;
+	border-right: 5px solid #db0c2b;
+}
+
+.mobilecurrent {
+	background-color: #ccc;
+	color: #fff;
+}
+
+nav {
+	position: fixed;
+	left: 2%;
+	width: 25%;
+	height: 100%;
+	background: #fff;
+}
+
+nav a {
+	display: block;
+	margin-bottom: 25px;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:link {
+	background: #A8A8A8;
+	padding: 10px 20px;
+	color: #000;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+nav a:visited {
+	color: #000;
+}
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.1.0
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+
+/* Bounce To Right from Hover.css */
+.hvr-bounce-to-right {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color: #fff;
+}
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+nav a:active {
+	color: #FFF;
+}
+
+/* Main body */
+
+main p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	margin-bottom: 24px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+main ul {
+	list-style-position: inside;
+	margin-bottom: 24px;
+}
+
+main li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	text-align: left;
+	background: #ccc;
+	padding: 10px;
+}
+
+/* Animation for h1 */
+
+@keyframes title {
+    0%   {color: #fff; left:1200px;}
+    25%  {color: #ccc; left:0px;}
+    50%  {color: #aaa; left:0px;}
+    75%  {color: #999; left:0px;}
+    100% {color: #7A7A7A; left:0px;}
+}
+
+/* Contact form */
+
+#formwrapper {
+	margin: 20px auto;
+	width: 99%;
+	padding: 20px;
+	background: #ccc;
+}
+
+input[type=text], input[type=email] {
+	width: 60%;
+	padding: 10px;
+	margin: 0 0 20px;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #a7a7a7;
+	border-radius: 4px;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	background: #eee;
+	transition: all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+	width: 100%;
+	background: #fff;
+	color: #333;
+	outline: none;
+	border-bottom: 2px solid #db0c2b;
+}
+
+input[type=submit], input[type=reset] {
+	width: 40%;
+	background: #a7a7a7;
+	color: #eee;
+	padding: 10px;
+	margin: 14px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	box-shadow: 1px 1px 15px #000;
+	outline: none;
+	text-align: center;
+	transition: all .3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background: #333;
+	color: #eee;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	border-radius: 4px;
+	border: 2px solid #a7a7a7;
+	background: #eee;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	resize: none;
+	color: #333;
+	margin-bottom: 24px;
+	outline: none;
+	transition: all .3s;
+}
+
+textarea:focus {
+	background: #fff;
+	color: #333;
+	outline: none;
+}
+
+label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #666;
+}
