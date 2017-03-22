@@ -1,6 +1,6 @@
 /* === DESKTOP LAYOUT === */
-/* 769-1200px */
-@media only screen and (min-width: 769px) {
+/* 1025-1200px */
+@media only screen and (min-width: 1025px) {
 
 	.mobilelogo, .mobilenav, .mobilemenu, .overlay-content, #mobilenav {
 		display: none;
@@ -75,8 +75,12 @@
 	}
 
 	.maps {
-		width: 100%;
-		margin: 20px auto;
+			width: 100%;
+			margin: 20px auto;
+	}
+
+	.ipadmaps {
+		display: none;
 	}
 
 	main section {
@@ -113,10 +117,126 @@
 
 }
 
-/* === TABLET LAYOUT === */
-/* From 481px to 768px */
+/* === LANDSCAPE TABLET === */
+/* 801-1024px */
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+.mobilelogo, .mobilenav, .mobilemenu, .overlay-content, #mobilenav {
+		display: none;
+	}
+
+	main {
+		position: absolute;
+	  	top: 2%;
+		left: 33%;
+		width: 60%;
+		height: auto;
+		background: url(../images/bgimage3-test.jpg) top center no-repeat;
+		background-size: cover;
+		padding: 25px;
+	  	text-align: justify;
+	  	margin-bottom: 30px;
+	}
+
+	/* Main header */
+
+	h1 {
+	  	font-family: 'Raleway', sans-serif;
+	  	font-size: 58px;
+	  	color: #7A7A7A;
+	  	position: relative;
+	    text-align: left;
+	    margin-bottom: 20px;
+	    font-weight: normal;
+	}
+
+	main.landing {
+		position: absolute;
+	  	top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: auto;
+		background: #fff;
+		padding: 5px;
+	  	text-align: justify;
+	 }
+
+	 nav.landing {
+	 	position: absolute;
+	 	padding: 15px;
+	 	bottom: 15%;
+		width: 60%;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	 	height: auto;
+	 	background: #fff;
+	 }
+
+	nav.landing a {
+	 	display: inline;
+	 	margin: 0;
+
+	 }
+
+	 .logo {
+		position: fixed;
+		left: 4%;
+		width: 25%;
+		top: 4%;
+		background: #fff;
+	}
+
+	.underline {
+		text-decoration: underline;
+	}
+
+	.maps {
+		display: none;
+	}
+
+	.ipadmaps {
+		width: 100%;
+		margin: 3px auto;
+	}
+
+	main section {
+		width: 49%;
+		float: left;
+		display: inline-block;
+		margin-right: 5px;
+		padding: 5px;
+		text-align: left;
+	}
+
+	footer {
+	    position: fixed;
+	    left: 0px;
+	    bottom: 0%;
+	    height: 29px;
+	    width: 100%;
+	    background: #CCCCCC;
+	    font-family: 'Raleway', serif;
+	    font-size: 17px;
+	    text-align: center;
+	    color: #000;
+	    border-top: 2px solid rgba(167,167,167,.7);
+	    border-bottom: 2px solid rgba(167,167,167,.7);
+	}
+
+	footer a:link {
+		color: #a4031a;
+	}
+	
+	footer a:visited {
+		color: #000;
+	}
+}
+
+/* === TABLET LAYOUT === */
+/* From 481px to 800px */
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
 
 	nav {
 		display: none;
@@ -238,6 +358,10 @@
 		margin: 20px auto;
 	}
 	
+	.ipadmaps {
+		display: none;
+	}
+
 	.mobilemenu {
 		position: fixed;
 		top: 5px;
